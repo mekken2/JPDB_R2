@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Shipment Form</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+        
+    </head>
+    <body>
+        <div class="container">
+            <h2>Shipment Management Form</h2>
+            <form id="shipForm" method="post">
+                <div class="form-group">
+                    <span><label for="shipid">Shipment No:</label> <label id="empIdMsg">
+                        </label></span>
+                    <input type="number" class="form-control" name="shipid" id="shipid"
+                           placeholder="Enter Shipment No" onchange="getEmp()" required>
+                </div>
+                <div class="form-group">
+                    <label for="shipdesc">Shipment Description:</label>
+                    <input type="text" class="form-control" id="shipdesc"
+                           placeholder="Enter Shipment Description" name="shipdesc">
+                </div>
+                <div class="form-group">
+                    <label for="shipsrc">Source:</label>
+                    <input type="text" class="form-control" id="shipsrc"
+                           placeholder="Enter Shipment Source" name="shipsrc">
+                </div>
+                <div class="form-group">
+                    <label for="shipdtn">Destination:</label>
+                    <input type="text" class="form-control" id="shipdtn"
+                           placeholder="Enter Shipment Destination" name="shipdtn">
+                </div>
+                <div class="form-group">
+                    <label for="shipdt">Shipping Date:</label>
+                    <input type="date" class="form-control" id="shipdt"
+                           placeholder="Enter Shipping Date" name="shipdt">
+                </div>
+                <div class="form-group">
+                    <label for="shiptdd">Expected Delivery Date:</label>
+                    <input type="date" class="form-control" id="shipdd"
+                           placeholder="Enter Delivery Date" name="shipdd">
+                </div>
+                <div class="form-group text-center">
+                    <input type="button" class="btn btn-primary" id="save" value="Save"
+                        onclick="saveData();">
+                    <input type="button" class="btn btn-primary" id="change" value="Change"
+                        onclick="changeData();">
+                    <input type="button" class="btn btn-primary" id="reset" value="Reset"
+                        onclick="resetForm();">
+                </div>
+            </form>
+        </div>
+        <script src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
