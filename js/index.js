@@ -3,7 +3,7 @@ var jpdbIRL = '/api/irl';
 var jpdbIML = '/api/iml';
 var shipDBName = 'DELIVERY-DB';
 var shipRelationName = 'SHIPMENT-TABLE';
-var connToken = '90933135|-31949318624859791|90951263';
+var connToken = 'YOUR_TOKEN_HERE';
 
 $('#shipid').focus();
 
